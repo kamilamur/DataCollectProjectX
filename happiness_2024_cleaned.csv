@@ -1,0 +1,144 @@
+Rank,Country,Happiness,Happiness_Level
+1,Finland,7.741,High
+2,Denmark,7.583,High
+3,Iceland,7.525,High
+4,Sweden,7.344,High
+5,Israel,7.341,High
+6,Netherlands,7.319,High
+7,Norway,7.302,High
+8,Luxembourg,7.122,High
+9,Switzerland,7.06,High
+10,Australia,7.057,High
+11,New Zealand,7.029,High
+12,Costa Rica,6.955,High
+13,Kuwait,6.951,High
+14,Austria,6.905,High
+15,Canada,6.9,High
+16,Belgium,6.894,High
+17,Ireland,6.838,High
+18,Czechia,6.822,High
+19,Lithuania,6.818,High
+20,United Kingdom,6.749,High
+21,Slovenia,6.743,High
+22,United Arab Emirates,6.733,High
+23,United States,6.725,High
+24,Germany,6.719,High
+25,Mexico,6.678,High
+26,Uruguay,6.611,High
+27,France,6.609,High
+28,Saudi Arabia,6.594,High
+29,Kosovo,6.561,High
+30,Singapore,6.523,High
+31,Taiwan,6.503,High
+32,Romania,6.491,High
+33,El Salvador,6.469,High
+34,Estonia,6.448,High
+35,Poland,6.442,High
+36,Spain,6.421,High
+37,Serbia,6.411,High
+38,Chile,6.36,High
+39,Panama,6.358,High
+40,Malta,6.346,High
+41,Italy,6.324,High
+42,Guatemala,6.287,High
+43,Nicaragua,6.284,High
+44,Brazil,6.272,High
+45,Slovak Republic,6.257,High
+46,Latvia,6.234,High
+47,Uzbekistan,6.195,High
+48,Argentina,6.188,High
+49,Kazakhstan,6.188,High
+50,Cyprus,6.068,High
+51,Japan,6.06,High
+52,"Korea, Rep.",6.058,High
+53,Philippines,6.048,High
+54,Viet Nam,6.043,High
+55,Portugal,6.03,High
+56,Hungary,6.017,High
+57,Paraguay,5.977,Medium
+58,Thailand,5.976,Medium
+59,Malaysia,5.975,Medium
+60,China,5.973,Medium
+61,Honduras,5.968,Medium
+62,Bahrain,5.959,Medium
+63,Croatia,5.942,Medium
+64,Greece,5.934,Medium
+65,Bosnia and Herzegovina,5.877,Medium
+66,Libya,5.866,Medium
+67,Jamaica,5.842,Medium
+68,Peru,5.841,Medium
+69,Dominican Republic,5.823,Medium
+70,Mauritius,5.816,Medium
+71,Moldova,5.816,Medium
+72,Russian Federation,5.785,Medium
+73,Bolivia,5.784,Medium
+74,Ecuador,5.725,Medium
+75,Kyrgyz Republic,5.714,Medium
+76,Montenegro,5.707,Medium
+77,Mongolia,5.696,Medium
+78,Colombia,5.695,Medium
+79,"Venezuela, RB",5.607,Medium
+80,Indonesia,5.568,Medium
+81,Bulgaria,5.463,Medium
+82,Armenia,5.455,Medium
+83,South Africa,5.422,Medium
+84,North Macedonia,5.369,Medium
+85,Algeria,5.364,Medium
+86,"Hong Kong SAR, China",5.316,Medium
+87,Albania,5.304,Medium
+88,Tajikistan,5.281,Medium
+89,"Congo, Rep.",5.221,Medium
+90,Mozambique,5.216,Medium
+91,Georgia,5.185,Medium
+92,Iraq,5.166,Medium
+93,Nepal,5.158,Medium
+94,Lao PDR,5.139,Medium
+95,Gabon,5.106,Medium
+96,Cote d'Ivoire,5.08,Medium
+97,Guinea,5.023,Medium
+98,Turkiye,4.975,Medium
+99,Senegal,4.969,Medium
+100,"Iran, Islamic Rep.",4.923,Medium
+101,Azerbaijan,4.893,Medium
+102,Nigeria,4.881,Medium
+103,West Bank and Gaza,4.879,Medium
+104,Cameroon,4.874,Medium
+105,Ukraine,4.873,Medium
+106,Namibia,4.832,Medium
+107,Morocco,4.795,Medium
+108,Pakistan,4.657,Medium
+109,Niger,4.556,Medium
+110,Burkina Faso,4.548,Medium
+111,Mauritania,4.505,Medium
+112,"Gambia, The",4.485,Low
+113,Chad,4.471,Low
+114,Kenya,4.47,Low
+115,Tunisia,4.422,Low
+116,Benin,4.377,Low
+117,Uganda,4.372,Low
+118,Myanmar,4.354,Low
+119,Cambodia,4.341,Low
+120,Ghana,4.289,Low
+121,Liberia,4.269,Low
+122,Mali,4.232,Low
+123,Madagascar,4.228,Low
+124,Togo,4.214,Low
+125,Jordan,4.186,Low
+126,India,4.054,Low
+127,"Egypt, Arab Rep.",3.977,Low
+128,Sri Lanka,3.898,Low
+129,Bangladesh,3.886,Low
+130,Ethiopia,3.861,Low
+131,Tanzania,3.781,Low
+132,Comoros,3.566,Low
+133,"Yemen, Rep.",3.561,Low
+134,Zambia,3.502,Low
+135,Eswatini,3.502,Low
+136,Malawi,3.421,Low
+137,Botswana,3.383,Low
+138,Zimbabwe,3.341,Low
+139,"Congo, Dem. Rep.",3.295,Low
+140,Sierra Leone,3.245,Low
+141,Lesotho,3.186,Low
+142,Lebanon,2.707,Low
+143,Afghanistan,1.721,Low
