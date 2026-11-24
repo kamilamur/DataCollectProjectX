@@ -1,10 +1,23 @@
 import os
 from pathlib import Path
 
-DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+PROJECT_DIR = Path(__file__).resolve().parent.parent
+DATA_DIR = PROJECT_DIR / "data"
+FIGURES_DIR = PROJECT_DIR / "figures"
+DOCS_DIR = PROJECT_DIR / "docs"
 RAW_CSV = DATA_DIR / "raw_data.csv"
 RAW_JSON = DATA_DIR / "raw_data.json"
 CONSUMED_CSV = DATA_DIR / "consumed_data.csv"
+VALID_CSV = DATA_DIR / "validated_data.csv"
+INVALID_CSV = DATA_DIR / "invalid_records.csv"
+CLEANED_CSV = DATA_DIR / "cleaned_data.csv"
+CITY_SUMMARY_CSV = DATA_DIR / "city_summary.csv"
+HOURLY_PIVOT_CSV = DATA_DIR / "city_hour_pivot.csv"
+DB_PATH = DATA_DIR / "output.db"
+EDA_RESULTS_MD = DOCS_DIR / "eda_results.md"
+
+WHO_PM25_24H = 15.0
+WHO_PM10_24H = 45.0
 
 API_URL = "https://air-quality-api.open-meteo.com/v1/air-quality"
 CITIES = {

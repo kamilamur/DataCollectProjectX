@@ -1,0 +1,6 @@
+record_id,city,latitude,longitude,timestamp,pm2_5,pm10,us_aqi,collected_at,is_test,errors
+Almaty_2026-11-17T00:30,Almaty,43.2,76.9,2026-11-17T00:30,-5.0,12.0,650.0,2026-11-24T12:00:00,True,"pm2_5: in_range(0, 1000) (value: -5.0) | us_aqi: in_range(0, 500) (value: 650.0)"
+Paris_2026-11-17T01:30,Paris,48.86,2.35,2026-11-17T01:30,10.0,15.0,40.0,2026-11-24T12:00:00,True,"city: city_in_['Almaty', 'Astana', 'Shymkent', 'Atyrau', 'Karaganda'] (value: Paris) | longitude: in_range(46.5, 87.5) (value: 2.35)"
+Astana_not-a-date,Astana,51.2,71.4,not-a-date,10.0,15.0,40.0,2026-11-24T12:00:00,True,row: record_id_matches_city_and_time | record_id: str_matches('^[A-Za-z]+_\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$') (value: Astana_not-a-date) | timestamp: coerce_dtype('datetime64[ns]') (value: not-a-date)
+Shymkent_2031-01-01T00:00,Shymkent,42.3,69.6,2031-01-01T00:00,80.0,40.0,55.5,2026-11-24T12:00:00,True,row: timestamp_not_in_future | row: pm10_not_below_pm2_5 | us_aqi: is_whole_number (value: 55.5)
+,Atyrau,47.1,51.9,2026-11-17T02:00,10.0,15.0,40.0,2026-11-24T12:00:00,True,row: record_id_matches_city_and_time | record_id: not_nullable (value: None)
