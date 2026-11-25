@@ -1,10 +1,10 @@
-# Air Quality in Kazakhstan Cities - Data Streaming and Validation Pipeline
+# Air Quality in Kazakhstan Cities 
 
-SIS2 project for the course **Data Collection & Preparation**.
+SIS2 project 
 
 The pipeline collects hourly air quality data (PM2.5, PM10, US AQI) for 5 cities of Kazakhstan - Almaty, Astana, Shymkent, Atyrau and Karaganda - for the last 7 days from the Open-Meteo Air Quality API, streams the records through Apache Kafka, validates them with Pandera, cleans and transforms them with pandas and NumPy, stores them in SQLite3 and performs exploratory data analysis.
 
-```
+
 Open-Meteo API -> api_client -> producer -> Kafka topic -> consumer -> validator (Pandera)
                -> cleaner (pandas/NumPy) -> loader (SQLite3) -> analysis (EDA + figures)
 ```
@@ -25,20 +25,12 @@ pip install -r requirements.txt
 - No API key is needed.
 - Request parameters for each city:
 
-| Parameter | Value |
-|---|---|
-| latitude, longitude | city coordinates (see `src/config.py`) |
-| hourly | `pm2_5,pm10,us_aqi` |
-| past_days | `7` |
-| forecast_days | `0` |
-| timezone | `Asia/Almaty` |
-
 One request returns 168 hourly values (7 days x 24 hours) for one city, so 5 cities give **840 records**.
-Errors are handled in `src/api_client.py`: a failed request (timeout, connection error, status code other than 200, response without data) is repeated up to 3 times, and the city is skipped if all attempts fail.
+Errors are handled in `src/api_client.py`: a failed request (timeout, connection error, status code other than 200, response without data) is repeated up to 3 times, and the city is skipped if all attempts fail
 
 ## Kafka setup
 
-Start the Kafka broker in Docker (KRaft mode, no Zookeeper):
+Starting Kafka broker in Docker:
 
 ```bash
 docker compose up -d
@@ -53,11 +45,6 @@ docker exec kafka /opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:90
 docker exec kafka /opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --list
 ```
 
-Settings can be changed with environment variables (see `.env.example`): `KAFKA_SERVER`, `KAFKA_TOPIC`, `KAFKA_GROUP`.
-
-## How to run
-
-Run all commands from the project folder.
 
 **Option 1 - full pipeline:**
 
@@ -171,11 +158,7 @@ Records stored in SQLite               840
 Successful execution: the summary counts match, the idempotency check says `PASSED`, the SQL query "Duplicate city+hour" returns no rows, and `figures/` contains 4 PNG files.
 If the pipeline is run again on another day, new hours are added to the database and old ones are skipped, so "stored in SQLite" can be larger than "after cleaning".
 
-## Stop Kafka
 
-```bash
-docker compose down
-```
 
 ## Project structure
 
